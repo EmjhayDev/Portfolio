@@ -231,6 +231,13 @@ img {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
+.button i,
+.button svg {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
