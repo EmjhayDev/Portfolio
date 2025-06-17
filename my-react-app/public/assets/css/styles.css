@@ -204,11 +204,14 @@ img {
 .home__social-icon:hover {
   color: var(--first-color);
 }
-.home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 260px;
+.home {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  padding: 4rem 0 5rem;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }
 .home__blob {
   fill: var(--first-color);
@@ -493,5 +496,19 @@ img {
   }
   .home__img {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+
+  .home__img {
+    justify-self: end;
+    align-self: center;
+    width: 100%;
+    max-width: 450px;
   }
 }
